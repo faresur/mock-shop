@@ -1,7 +1,7 @@
 <?php
 $pg_title = 'About';
-include('functions.php');
-include('header.php');
+include('src/functions.php');
+include('src/header.php');
 ?>
 <section>
 	<h2><b>Diamonds are forever!</b></h2>
@@ -12,4 +12,4 @@ include('header.php');
 		You can find our assortment in the <a href="products.php">products</a> section.
 	</p> 
 </section> 
-<?php include('foot.php'); ?>
+<?php include('src/foot.html'); ?>

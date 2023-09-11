@@ -3,14 +3,14 @@ session_start();
 
 $pg_title = 'Cart';
 
-include('db.php');
-include('functions.php');
-include('header.php');
+include('src/db.php');
+include('src/functions.php');
+include('src/header.php');
 
 
 
 ?>
-<section>   
+<section>
 <h2>Products in your cart:</h2>
 
 <?php
@@ -36,4 +36,4 @@ else
 ?>
 
 </section> 
-<?php include('foot.php'); ?>
+<?php include('src/foot.html'); ?>

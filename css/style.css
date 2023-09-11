@@ -5,7 +5,7 @@
 }
 
 body { 
-	background-image: url(src/img/tile-dark.jpg);
+	background-image: url(../src/img/tile-dark.jpg);
 	background-position: left 60px;
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 	color: var(--primary);
@@ -36,10 +36,10 @@ nav {
 }
 
 nav a {
-  color: rgb(205,205,205);
-  border-left: 1px solid rgb(205,205,205);  
-  border-right: 1px solid rgb(205,205,205);
-  text-decoration: none;  
+  color: var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  text-decoration: none;
   padding: 0 0.5em;
 }
 

@@ -83,8 +83,8 @@ function list_cart($mysqli)
 			foreach ($_SESSION["kos"] as $prod)
 			{
 
-				$sql = "SELECT * FROM diamond_products WHERE kod=$prod";  // definuj dopyt
-				if (($result = $mysqli->query($sql)) && ($result->num_rows > 0)) {  // vykonaj dopyt
+				$sql = "SELECT * FROM diamond_products WHERE kod=$prod";
+				if (($result = $mysqli->query($sql)) && ($result->num_rows > 0)) {
 					while($row = $result->fetch_assoc())
 					{
 						echo "<img src='src/prod-img\\" . $row["kod"] . ".png' alt='" . $row['nazov'] ."' width='130' height='130'>";

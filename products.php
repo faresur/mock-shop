@@ -2,8 +2,8 @@
 session_start();
 
 $pg_title = 'Products';
-include('functions.php');
-include('header.php');
+include('src/functions.php');
+include('src/header.php');
 ?>
 <section>   
 
@@ -40,4 +40,4 @@ list_prod($mysqli, isset($_SESSION["admin"]) ? $_SESSION["admin"] : 1, isset($_P
 ?>
 
 </section> 
-<?php include('foot.php'); ?>
+<?php include('src/foot.html'); ?>
