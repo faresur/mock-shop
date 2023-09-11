@@ -1,0 +1,140 @@
+:root {
+	--primary: #122944;
+	--secondary: #E1750D;
+	--accent: #75A1C4;
+}
+
+body { 
+	background-image: url(src/img/tile-dark.jpg);
+	background-position: left 60px;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: var(--primary);
+	padding: 4px;
+	margin: auto;
+	width: 75%;
+}
+
+header {
+	background-color: var(--primary);
+	height: 60px;
+	overflow: hidden;
+	padding: 4px;
+	border-radius: 10px;
+}
+
+header h1 {
+  color: var(--accent);
+  float: right;
+}
+
+nav {
+  	color: var(--accent);
+	background-color: var(--primary);
+	text-align: center;
+	padding: 1%;
+	border-radius: 10px;
+}
+
+nav a {
+  color: rgb(205,205,205);
+  border-left: 1px solid rgb(205,205,205);  
+  border-right: 1px solid rgb(205,205,205);
+  text-decoration: none;  
+  padding: 0 0.5em;
+}
+
+nav a:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+}
+
+nav img {
+  padding: 0 0.5em;
+}
+
+nav #cart {
+	float: right;
+}
+
+nav #cart a {
+	text-decoration: underline;
+	border: none;
+}
+
+section {
+	background-color: #FFFFFF;
+	padding: 1%;
+}
+
+section table th, section table td {
+  border-bottom: 1px solid rgb(48,0,95);
+}
+
+section a {
+	color: #666;
+	font-weight: bold;
+}
+
+section figure {
+	margin: 0.5em;
+	padding: 5px;
+	text-align: center;
+	float:  left;
+	width: 150px;
+	border: 1px solid rgb(48,0,95);
+}
+
+section figure:hover {
+	background-color: var(--accent);
+}
+
+figure {
+	color: var(--primary);
+}
+
+figure p {
+	clear: both;
+	margin: 0;
+}
+
+section figcaption {
+	font-weight: bold;
+	height: 40px;
+	overflow: hidden;
+}
+
+footer {
+	font-size: 90%; 
+	color: rgb(205,205,205);
+	background-color: var(--primary);
+	padding: 0.5em;
+	clear: both;
+	border-radius: 10px;
+}
+
+fieldset {
+	border: 1px solid rgb(48,0,95);
+	padding: 0.5em;
+}
+
+legend {
+	color: rgb(48,0,95);
+	font-weight: bold;
+	padding: 0 0.5em;
+}
+
+.error {
+	color: #FF0000;
+}
+
+.ok {
+	color: #0000FF;
+}
+
+.container {
+	background-color: #FFFFFF;
+	border: var(--accent);
+	border-width: 2px;
+	border-style: double;
+	border-radius: 8px;
+}
