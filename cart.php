@@ -16,18 +16,18 @@ include('src/header.php');
 <?php
 if (isset($_SESSION["user"]) && !$_SESSION['admin'])
 {
-if (isset($_POST["zrus"]))
-{
-	del_cart();
-}
+	if (isset($_POST["zrus"]))
+	{
+		del_cart();
+	}
 
-if (isset($_POST["odosli"]))
-{
-	send_order($mysqli);
-	del_cart();
-}
+	if (isset($_POST["odosli"]))
+	{
+		send_order($mysqli);
+		del_cart();
+	}
 
-list_cart($mysqli);
+	list_cart($mysqli);
 }
 else
 {
